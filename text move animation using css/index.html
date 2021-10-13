@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+  <style type="text/css">
+    
+
+
+    .ml9 {
+      position: relative;
+      font-weight: 200;
+      font-size: 4em;
+    }
+
+    .ml9 .text-wrapper {
+      position: relative;
+      display: inline-block;
+      padding-top: 0.2em;
+      padding-right: 0.05em;
+      padding-bottom: 0.1em;
+      overflow: hidden;
+    }
+
+    .ml9 .letter {
+      transform-origin: 50% 100%;
+      display: inline-block;
+      line-height: 1em;
+    }
+    
+  </style>
+</head>
+<body>
+
+
+    
+
+
+
+
+<h1 class="ml9 par1">  
+    <span class="letters chil1">Coffee mornings</span>  
+</h1>
+<script type="text/javascript">
+var textWrapper = document.querySelector('.par1 .chil1');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+anime.timeline({loop: false})
+  .add({
+    targets: '.par1 .letter',
+    scale: [0, 1],
+    duration: 2000,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.par1',
+    opacity: 1,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+
+
+
+
+<h1 class="ml9 par2">
+    <span class="letters chil2">Coffee mornings2684fdg65d4fg 6fd5g45 f4h5 fg4 h5fg4h5fg4h</span>  
+</h1>
+<script type="text/javascript">
+var textWrapper = document.querySelector('.par2 .chil2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+anime.timeline({loop: false})
+  .add({
+    targets: '.par2 .letter',
+    scale: [0, 1],
+    duration: 2000,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.par2',
+    opacity: 1,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+
+
+
+
+
+</body>
+</html>
+
